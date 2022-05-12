@@ -1,5 +1,5 @@
 html,
-body {
+* {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -13,4 +13,118 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.page_login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.login_form {
+  width: 95%;
+  max-width: 500px;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: .75rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.login_title {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.context {
+  display: flex;
+  flex-direction: column;
+}
+
+.context > span {
+  margin: 1rem 0;
+  color: #F4A532;
+  font-weight: 600;
+}
+
+.btn_github {
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  height: 40px;
+  padding: 0 1rem;
+  gap: .75rem;
+  background-color: #172e4a;
+  border: 1px solid rgb(74, 82, 92);
+  color: #fafafa;
+}
+.btn_github:hover {
+  background-color: #1d242e;
+}
+
+.btn_text{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+/*----------  index page  ----------*/
+
+.page_index {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.center span {
+  color: #F4A532;
+}
+.center p{
+  margin: 6px 0;
+}
+
+.index_title {
+  text-align: center;
+
+}
+
+.perfil_img {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1rem auto;
+}
+.perfil_img img{
+  width: 100%;
+  height: 100%;
+}
+
+.btn_session {
+  border: none;
+  background-color: #F4A532;
+  color: #fff;
+  padding: 8px 1rem;
+  border-radius: .35rem;
 }
